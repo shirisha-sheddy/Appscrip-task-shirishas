@@ -1,0 +1,171 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 60px;
+  }
+  
+  .upper-footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 45px;
+  }
+  
+  .newsletter,
+  .contact-info {
+    flex: 1;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .subscribe-form input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #fff;
+    background-color: white;
+    color: black;
+  }
+  
+  .subscribe-form button {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #333;
+    border: 1.8px solid#333;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 700;
+  }
+  
+  .currency-note {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
+  .lower-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+  
+  .company-info,
+  .quick-links,
+  .social-and-payment {
+    flex: 1;
+  }
+  
+  .footer h4{
+    margin-bottom: 15px;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 10px;
+  }
+  
+  .currency-div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .social-icons,
+  .payment-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: small;
+  }
+  
+  .mobile-footer {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-footer {
+      display: none;
+    }
+  
+    .mobile-footer {
+      display: block;
+    }
+  
+    .footer {
+      padding: 45px;
+    }
+  
+    .mobile-footer-section,
+    .call-us,
+    .currency,
+    .payment-section {
+      border-bottom: 1px solid #333;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+  
+    .arrow-up {
+      transform: rotate(180deg);
+    }
+  
+    .section-content {
+      display: none;
+    }
+  
+    .section-content.open,
+    .no-accordion .section-content {
+      display: block;
+    }
+  
+    .subscribe-form {
+      flex-direction: row;
+    }
+  
+    .subscribe-form input {
+      flex-grow: 1;
+      margin-right: 10px;
+      width: auto;
+    }
+  
+    .subscribe-form button {
+      flex-shrink: 0;
+      margin-left: 0;
+    }
+  
+    .payment-icons {
+      justify-content: space-between;
+    }
+  
+    .payment-icons img {
+      height: 25px;
+      width: auto;
+    }
+  
+    .currency-div {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  }

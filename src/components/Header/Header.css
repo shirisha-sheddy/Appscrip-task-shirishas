@@ -1,0 +1,120 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 45px 10px 45px;
+    position: relative;
+  }
+  
+  .brandWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .centerNavigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .centerNavigation a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .actionIcons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .actionIcons span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottomSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 45px 20px 45px;
+  }
+  
+  .bottomSection a {
+    text-decoration: none;
+    color: #252020;
+    font-family: "Simplon Norm", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .menuToggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .menuToggle span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  
+  .mobileNavigation {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .topSection {
+      padding: 15px 20px;
+    }
+  
+    .menuToggle {
+      display: flex;
+      margin-right: 15px;
+      margin-bottom: 8px;
+    }
+  
+    .brandLogo {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  
+    .hideOnMobile,
+    .actionIcons > span,
+    .desktopMenu {
+      display: none;
+    }
+  
+    .actionIcons {
+      gap: 15px;
+    }
+  
+    .mobileNavigation {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+  
+    .mobileNavigation a {
+      padding: 10px 0;
+      text-decoration: none;
+      color: #252020;
+      font-family: "Simplon Norm", sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  

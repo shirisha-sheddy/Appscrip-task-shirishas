@@ -1,0 +1,249 @@
+.product-list {
+    padding: 0 45px 20px 45px;
+  }
+  
+  .product-title {
+    font-family: Simplon Norm, sans-serif;
+    font-size: 32px;
+    padding-top: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .product-description {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+  
+  .product-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: Simplon Norm, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .filter-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-count {
+    margin-right: 20px;
+  }
+  
+  .toggle-filter-button,
+  .filter-tab {
+    border: none;
+    background: none;
+    font-family: Simplon Norm, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .toggle-filter-button {
+    text-decoration: underline;
+    font-family: Adobe Caslon Pro, serif;
+    font-weight: 400;
+    color: #888792;
+  }
+  
+  .recommended-select {
+    border: none;
+    background: none;
+    font-family: Simplon Norm, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .product-section {
+    flex: 1;
+  }
+  
+  .sign-in {
+    text-decoration: underline;
+  }
+  
+  .product-grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .grid-filter-visible {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-filter-hidden {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .product-card {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .liked .heart-icon path {
+    fill: red;
+    stroke: red;
+  }
+  
+  .product-status-container {
+    padding: 10px 0;
+  }
+  
+  .like-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-status {
+    font-size: 12px;
+  }
+  
+  .product-name {
+    text-align: start;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .heart-icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .heart-icon path {
+    fill: none;
+    stroke: black;
+  }
+  
+  .new-product {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #000;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .out-of-stock .blurred-image {
+    filter: blur(2px);
+  }
+  
+  .stock-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .grid-filter-visible {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-filter-hidden {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-title {
+      font-size: 24px;
+    }
+    .product-description {
+      font-size: 14px;
+    }
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .filter-toggle-container {
+      display: none;
+    }
+    .product-list-header {
+      justify-content: center;
+      padding: 0;
+      border-bottom: none;
+    }
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .mobile-tab-container {
+      display: flex;
+      width: 100%;
+    }
+  
+    .filter-tab,
+    .recommended-select {
+      flex: 1;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      background: none;
+      font-family: Simplon Norm, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+    }
+  
+    .filter-tab {
+      border-right: 1px solid #ddd;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  }
+  

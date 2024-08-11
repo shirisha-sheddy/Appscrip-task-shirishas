@@ -1,0 +1,23 @@
+/* styles.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .home-main {
+    display: flex;
+    flex: 1;
+  }
+  
+  .home-sidebar {
+    width: 250px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .home-productList {
+    flex: 1;
+    padding: 20px;
+  }
+  
